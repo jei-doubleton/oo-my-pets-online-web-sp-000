@@ -48,7 +48,7 @@ class Owner
 
   def list_pets
     binding.pry
-    "I have #{@pets[fishes].length} fish, #{} dog(s), and #{} cat(s)"
+    "I have #{@pets[:fishes].length} fish, #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)"
   end
 
   def change_mood(animal)
