@@ -64,4 +64,8 @@ class Owner
     change_mood(:cats)
   end
 
+  def feed_fish
+    change_mood(:fishes)
+  end
+
 end
