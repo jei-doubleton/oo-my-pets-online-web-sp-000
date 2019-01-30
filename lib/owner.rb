@@ -50,22 +50,22 @@ class Owner
     "I have #{@pets[:fishes].length} fish, #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
   end
 
-  def change_mood(animal)
+  def change_mood(animal, mood)
     @pets[animal].each do |pet|
-      pet.mood = "happy"
+      pet.mood = mood
     end
   end
 
   def walk_dogs
-    change_mood(:dogs)
+    change_mood(:dogs, "happy")
   end
 
   def play_with_cats
-    change_mood(:cats)
+    change_mood(:cats, "happy")
   end
 
   def feed_fish
-    change_mood(:fishes)
+    change_mood(:fishes, "happy")
   end
 
   def sell_pets
