@@ -38,8 +38,12 @@ class Owner
     @pets[:fishes] << new_fish
   end
 
+  def change_mood(animal)
+    @pets[animal].mood = "happy"
+  end
+
   def walk_dogs
-    @pets[:dogs].mood = "happy"
+    change_mood(dogs)
   end
 
 end
