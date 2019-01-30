@@ -51,6 +51,7 @@ class Owner
   end
 
   def change_mood(animal)
+    binding.pry
     @pets[animal].mood = "happy"
   end
 
