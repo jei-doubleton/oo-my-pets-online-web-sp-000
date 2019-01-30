@@ -43,7 +43,7 @@ class Owner
   end
 
   def walk_dogs
-    change_mood(dogs)
+    change_mood(:dogs)
   end
 
 end
