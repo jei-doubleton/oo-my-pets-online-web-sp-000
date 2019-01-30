@@ -60,4 +60,8 @@ class Owner
     change_mood(:dogs)
   end
 
+  def play_with_cats
+    change_mood(:cats)
+  end
+
 end
