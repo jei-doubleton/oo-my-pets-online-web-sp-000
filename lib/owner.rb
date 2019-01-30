@@ -39,11 +39,11 @@ class Owner
   end
 
   def change_mood(animal)
-    @pets[:animal].mood = "happy"
+    @pets[animal].mood = "happy"
   end
 
   def walk_dogs
-    change_mood(dogs)
+    change_mood(:dogs)
   end
 
 end
