@@ -72,6 +72,7 @@ class Owner
     change_mood(:dogs)
     change_mood(:cats)
     change_mood(:fishes)
+    @pets.clear
   end
 
 end
