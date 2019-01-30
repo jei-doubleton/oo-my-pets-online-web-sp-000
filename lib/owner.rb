@@ -68,4 +68,10 @@ class Owner
     change_mood(:fishes)
   end
 
+  def sell_pets
+    change_mood(:dogs)
+    change_mood(:cats)
+    change_mood(:fishes)
+  end
+
 end
