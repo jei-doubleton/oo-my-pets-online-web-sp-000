@@ -69,9 +69,9 @@ class Owner
   end
 
   def sell_pets
-    change_mood(:dogs)
-    change_mood(:cats)
-    change_mood(:fishes)
+    change_mood(:dogs, "nervous")
+    change_mood(:cats, "nervous")
+    change_mood(:fishes, "nervous")
     @pets.clear
   end
 
