@@ -20,6 +20,7 @@ class Owner
   end
 
   def say_species
+    binding.pry
     puts "I am a #{@species}."
   end
 
