@@ -46,6 +46,10 @@ class Owner
     @pets[:fishes] << new_fish
   end
 
+  def list_pets
+    "I have #{@pets[fishes].length} fish, #{} dog(s), and #{} cat(s)"
+  end
+
   def change_mood(animal)
     @pets[animal].mood = "happy"
   end
