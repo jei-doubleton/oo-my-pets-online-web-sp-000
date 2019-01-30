@@ -1,7 +1,7 @@
 class Owner
   # code goes here
   attr_accessor :pets
-  
+
   def initialize
     @pets = {fishes: [], cats: [], dogs: []}
   end
@@ -17,5 +17,5 @@ class Owner
   def buy_fish(name)
     Fish.new(name)
   end
-  
+
 end
