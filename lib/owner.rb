@@ -4,13 +4,17 @@ class Owner
 
   @@all = []
 
-  def initialize(argument)
+  def initialize(species)
     @pets = {fishes: [], cats: [], dogs: []}
     @@all << self
   end
 
   def self.all
     @@all
+  end
+
+  def species(species)
+    @species = species
   end
 
   def buy_cat(name)
